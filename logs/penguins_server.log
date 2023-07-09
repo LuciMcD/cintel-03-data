@@ -1,10 +1,10 @@
-2023-07-09 12:26:58,187.penguins_server.INFO =============================================================
-2023-07-09 12:26:58,189.penguins_server.INFO Today is 2023-07-09 at 12:26 PM
-2023-07-09 12:26:58,189.penguins_server.INFO This file is running on: nt Windows 10
-2023-07-09 12:26:58,190.penguins_server.INFO The Python version is: 3.11.4
-2023-07-09 12:26:58,190.penguins_server.INFO The active environment path is:   C:\Users\lucim\Desktop\Repositories\cintel-03-data\.venv
-2023-07-09 12:26:58,191.penguins_server.INFO The current working directory is: C:\Users\lucim\Desktop\Repositories\cintel-03-data
-2023-07-09 12:26:58,192.penguins_server.INFO =============================================================
-2023-07-09 12:27:42,813.penguins_server.DEBUG filter message: Showing 344 records
-2023-07-09 12:27:42,823.penguins_server.DEBUG Triggered penguin_filter_record_count_string
-2023-07-09 12:27:42,823.penguins_server.DEBUG Triggered penguins_filtered_table
+2023-07-09 15:09:16,685.penguins_server.INFO =============================================================
+2023-07-09 15:09:16,686.penguins_server.INFO Today is 2023-07-09 at 03:09 PM
+2023-07-09 15:09:16,686.penguins_server.INFO This file is running on: nt Windows 10
+2023-07-09 15:09:16,687.penguins_server.INFO The Python version is: 3.11.4
+2023-07-09 15:09:16,687.penguins_server.INFO The active environment path is:   C:\Users\lucim\Desktop\Repositories\cintel-03-data\.venv
+2023-07-09 15:09:16,688.penguins_server.INFO The current working directory is: C:\Users\lucim\Desktop\Repositories\cintel-03-data
+2023-07-09 15:09:16,689.penguins_server.INFO =============================================================
+2023-07-09 15:09:28,388.penguins_server.DEBUG filter message: Showing 344 records
+2023-07-09 15:09:28,388.penguins_server.DEBUG Triggered penguin_filter_record_count_string
+2023-07-09 15:09:28,388.penguins_server.DEBUG Triggered penguins_filtered_table

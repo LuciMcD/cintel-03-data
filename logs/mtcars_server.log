@@ -1,8 +1,8 @@
-2023-07-09 12:26:58,140.mtcars_server.INFO =============================================================
-2023-07-09 12:26:58,143.mtcars_server.INFO Today is 2023-07-09 at 12:26 PM
-2023-07-09 12:26:58,145.mtcars_server.INFO This file is running on: nt Windows 10
-2023-07-09 12:26:58,146.mtcars_server.INFO The Python version is: 3.11.4
-2023-07-09 12:26:58,147.mtcars_server.INFO The active environment path is:   C:\Users\lucim\Desktop\Repositories\cintel-03-data\.venv
-2023-07-09 12:26:58,150.mtcars_server.INFO The current working directory is: C:\Users\lucim\Desktop\Repositories\cintel-03-data
-2023-07-09 12:26:58,152.mtcars_server.INFO =============================================================
-2023-07-09 12:27:51,229.mtcars_server.DEBUG filter message: Showing 32 records
+2023-07-09 15:09:16,669.mtcars_server.INFO =============================================================
+2023-07-09 15:09:16,671.mtcars_server.INFO Today is 2023-07-09 at 03:09 PM
+2023-07-09 15:09:16,673.mtcars_server.INFO This file is running on: nt Windows 10
+2023-07-09 15:09:16,674.mtcars_server.INFO The Python version is: 3.11.4
+2023-07-09 15:09:16,676.mtcars_server.INFO The active environment path is:   C:\Users\lucim\Desktop\Repositories\cintel-03-data\.venv
+2023-07-09 15:09:16,677.mtcars_server.INFO The current working directory is: C:\Users\lucim\Desktop\Repositories\cintel-03-data
+2023-07-09 15:09:16,680.mtcars_server.INFO =============================================================
+2023-07-09 15:09:34,088.mtcars_server.DEBUG filter message: Showing 32 records
