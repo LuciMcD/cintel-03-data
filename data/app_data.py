@@ -35,7 +35,7 @@ penguins_df.to_csv(data_folder.joinpath("penguins.csv"))
 
 iris_df = sns.load_dataset("iris")
 iris_df.to_excel(data_folder.joinpath("iris.xlsx"))
-iris_df.to_csc(data_folder.joinpath("iris.csc"))
+iris_df.to_csc(data_folder.joinpath("iris.csv"))
 
 flights_df = sns.load_dataset("flights")
 flights_df.to_excel(data_folder.joinpath("flights.xlsx"))
