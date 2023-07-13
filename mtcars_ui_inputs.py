@@ -20,7 +20,6 @@ def get_mtcars_inputs():
             max=35,
             value=[10, 35],
         ),
-        ui.input_select("cyl: Number of cylinders", "Select cylinders",{"a":"4", "b":"6", "c":"8"}),
 
         ui.tags.hr(),
         ui.tags.section(
