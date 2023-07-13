@@ -24,7 +24,7 @@ from util_logger import setup_logger
 logger, logname = setup_logger(__name__)
 
 app_ui = ui.page_navbar(
-    shinyswatch.theme.lumen(),
+    shinyswatch.theme.minty(),
     ui.nav(
         "Home",
         ui.layout_sidebar(
@@ -98,7 +98,7 @@ def server(input, output, session):
     def insights_output():
         answer = input.language_input()
         count = len(answer)
-        language_string = f"You like {answer}. That takes {count} characters"
+        language_string = f"You like {answer}. Thats's great for you! That takes {count} characters"
         return language_string
 
     get_mtcars_server_functions(input, output, session)
