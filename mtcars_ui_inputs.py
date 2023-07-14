@@ -24,15 +24,9 @@ def get_mtcars_inputs():
 app_ui = ui.page_fluid(
         ui.input_select("cyl: Number of cylinders", "Select Number", {"a": "4", "b": "6", "c": "8"}),
         ui.output_text_verbatim("txt"),
-)
-def server(input, output, session):
-        @output
-        @render.text
-        def txt():
-            return f'cyl: "{input.x()}"'
+),
 
-
-app = App(app_ui, server, debug=True)
+app = App(app_ui, server, debug=True),
         
          ui.tags.hr(),
          ui.tags.section(
@@ -56,4 +50,4 @@ app = App(app_ui, server, debug=True)
 ui.tags.hr(),
 ui.p("🕒 Please be patient. Outputs may take a few seconds to load."),
 ui.tags.hr(),
-    )
+
