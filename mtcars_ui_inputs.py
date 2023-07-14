@@ -20,7 +20,7 @@ def get_mtcars_inputs():
             max=35,
             value=[10, 35],
         ),
-
+    
         ui.input_select("cyl", "Select Number of cylinders", {"A": "4", "B": "6", "C": "8"}),
         ui.output_text_verbatim("txt"),
         
@@ -47,4 +47,4 @@ def get_mtcars_inputs():
         ui.tags.hr(),
         ui.p("🕒 Please be patient. Outputs may take a few seconds to load."),
         ui.tags.hr(),
-    )
+
