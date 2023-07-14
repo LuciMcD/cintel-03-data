@@ -22,7 +22,7 @@ def get_mtcars_inputs():
         ),
     )
 
-    ui.input_select("cyl", "Select Number of cylinders", {"A": "4", "B": "6", "C": "8"}),
+    ui.input_select("cyl: Number of cylinders", "Select Number of cylinders", {"A": "4", "B": "6", "C": "8"}),
     ui.output_text_verbatim("txt"),
         
         
