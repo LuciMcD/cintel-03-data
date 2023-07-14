@@ -36,6 +36,15 @@ def get_mtcars_server_functions(input, output, session):
         logger.debug(f"filter message: {message}")
         return message
 
+    df = original_df
+
+            
+    df = df.drop(columns=["Unnamed: 0"])
+    sns.set_theme(style="ticks")
+    pairplot_grid = sns.pairplot(df, hue="cyl")
+    return pairplot_grid
+
+
     @output
     @render.plot
     def mtcars_plot():
@@ -48,6 +57,7 @@ def get_mtcars_server_functions(input, output, session):
             data=original_df,
             x="wt",
             y="mpg",
+            hue="cyl"
         )
         return plt
 
