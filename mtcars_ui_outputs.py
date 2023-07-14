@@ -22,12 +22,5 @@ def get_mtcars_outputs():
         ),
     )
 
-def server(input, output, session):
-    @output
-    @render.text
-    def txt():
-        return f'cyl: "{input.cyl()}"'
 
-
-app = App(app_ui, server, debug=True)
 

@@ -20,6 +20,11 @@ def get_mtcars_inputs():
             max=35,
             value=[10, 35],
         ),
+        ui.tags.hr(),
+        ui.input_select("cyl: Number of cylinders",
+             "Select number of cylinders", 
+             {"a": "4", "b": "6", "c": "8"}),
+         
          ui.tags.hr(),
          ui.tags.section(
             ui.h3("MT Cars Table"),
@@ -43,11 +48,5 @@ def get_mtcars_inputs():
         ui.p("🕒 Please be patient. Outputs may take a few seconds to load."),
         ui.tags.hr(),
         )
-from shiny import App, render, ui
-
-app_ui = ui.page_fluid(
-    ui.input_select("cyl", "Select Number of Cylinders", {"a": "4", "b": "6", "c": "8"}),
-    ui.output_text_verbatim("txt"),
-)
 
 
