@@ -45,7 +45,7 @@ def get_mtcars_inputs():
             ),
             ui.output_table("cars_table"),
         ),
-        ui.tags.hr(),
-        ui.p("🕒 Please be patient. Outputs may take a few seconds to load."),
-        ui.tags.hr(),
+ui.tags.hr(),
+ui.p("🕒 Please be patient. Outputs may take a few seconds to load."),
+ui.tags.hr(),
 
