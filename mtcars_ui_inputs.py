@@ -20,14 +20,6 @@ def get_mtcars_inputs():
             max=35,
             value=[10, 35],
         ),
-        
-app_ui = ui.page_fluid(
-        ui.input_select("cyl: Number of cylinders", "Select Number", {"a": "4", "b": "6", "c": "8"}),
-        ui.output_text_verbatim("txt"),
-),
-
-app = App(app_ui, server, debug=True),
-        
          ui.tags.hr(),
          ui.tags.section(
             ui.h3("MT Cars Table"),
@@ -47,7 +39,23 @@ app = App(app_ui, server, debug=True),
             ),
             ui.output_table("cars_table"),
         ),
-ui.tags.hr(),
-ui.p("🕒 Please be patient. Outputs may take a few seconds to load."),
-ui.tags.hr(),
+        ui.tags.hr(),
+        ui.p("🕒 Please be patient. Outputs may take a few seconds to load."),
+        ui.tags.hr(),
+        )
+from shiny import App, render, ui
 
+app_ui = ui.page_fluid(
+    ui.input_select("cyl", "Select Number of Cylinders", {"a": "4", "b": "6", "c": "8"}),
+    ui.output_text_verbatim("txt"),
+)
+
+
+def server(input, output, session):
+    @output
+    @render.text
+    def txt():
+        return f'cyl: "{input.cyl()}"'
+
+
+app = App(app_ui, server, debug=True)
