@@ -20,13 +20,11 @@ def get_mtcars_inputs():
             max=35,
             value=[10, 35],
         ),
-    
-        ui.tags.hr(),
         ui.input_select("cyl: Number of cylinders", "Select Number of cylinders", {"A": "4", "B": "6", "C": "8"}),
         
         
-    ui.tags.hr(),
-    ui.tags.section(
+         ui.tags.hr(),
+         ui.tags.section(
             ui.h3("MT Cars Table"),
             ui.tags.p("Description of each field in the table:"),
             ui.tags.ul(
