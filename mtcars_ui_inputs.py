@@ -24,6 +24,7 @@ def get_mtcars_inputs():
         ui.input_select("cyl", "Select Number of cylinders", {"A": "4", "B": "6", "C": "8"}),
         ui.output_text_verbatim("txt"),
         
+        
         ui.tags.hr(),
         ui.tags.section(
             ui.h3("MT Cars Table"),
