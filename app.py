@@ -24,20 +24,19 @@ from util_logger import setup_logger
 logger, logname = setup_logger(__name__)
 
 app_ui = ui.page_navbar(
-    shinyswatch.theme.darkly(),
+    shinyswatch.theme.solar(),
     ui.nav(
         "Home",
         ui.layout_sidebar(
             ui.panel_sidebar(
-                ui.h2("Sidebar Panel"),
-                ui.tags.hr(),
-                ui.h3("User Interaction Here"),
-                ui.input_text("name_input", "Enter your name", placeholder="Your Name"),
+                ui.h("Let's get some information."),
+                ui.input_text("name_input", "What's your name?", placeholder="Your Name"),
                 ui.input_text(
-                    "language_input",
-                    "Enter your favorite language(s)",
-                    placeholder="Favorite Programming Language(s)",
+                    "season_input",
+                    "What's your favorite season?",
+                    placeholder="My favorite season is...",
                 ),
+                ui.input_text("allergy_input", "Do you have allergies?", placeholder="Yes or No"),
                 ui.tags.hr(),
             ),
             ui.panel_main(
@@ -79,7 +78,7 @@ app_ui = ui.page_navbar(
     ui.nav(ui.a("App", href="https://LuciMcD.shinyapps.io/cintel-03-data/")),
     ui.nav(ui.a("Examples", href="https://shinylive.io/py/examples/")),
     ui.nav(ui.a("Themes", href="https://bootswatch.com/")),
-    title=ui.h1("McDaniel Dashboard"),
+    title=ui.h1("Fighting Allergies"),
 )
 
 
@@ -90,16 +89,22 @@ def server(input, output, session):
     @render.text
     def welcome_output():
         user = input.name_input()
-        welcome_string = f"Bienvenidos {user}!"
+        welcome_string = f"Bless you, {user}!"
         return welcome_string
 
     @output
     @render.text
     def insights_output():
-        answer = input.language_input()
-        count = len(answer)
-        language_string = f"You like {answer}. Thats's great for you! That takes {count} characters"
-        return language_string
+        answer = input.season_input()
+        season_string = f"Your favorite season is {answer}. Thats's great for you!"
+        return season_string
+    
+    @output
+    @render.text
+    def third_output():
+        choice = input.allergy_input()
+        third_string = f"{choice}. Allergies are NOT fun."
+        return third_string
 
     get_mtcars_server_functions(input, output, session)
     get_penguins_server_functions(input, output, session)
