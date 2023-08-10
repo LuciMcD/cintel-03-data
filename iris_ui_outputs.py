@@ -1,5 +1,5 @@
 from shiny import ui 
-from shinywidgets import output_widget
+
 
 def get_iris_outputs():
     return ui.panel_main(

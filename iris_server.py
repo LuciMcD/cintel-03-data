@@ -7,7 +7,7 @@ import pathlib
 from shiny import render, reactive
 import pandas as pd
 import seaborn as sns
-from shinywidgets import render_widget
+
 
 from util_logger import setup_logger
 
