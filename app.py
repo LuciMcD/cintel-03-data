@@ -8,8 +8,12 @@ Each Shiny app has two parts:
 - a server function that provides the logic for the app (similar to JS in a web page).
 
 """
+
+
 import shinyswatch
 from shiny import App, ui, render
+
+
 
 from iris_server import get_iris_server_functions
 from iris_ui_inputs import get_iris_inputs
@@ -20,6 +24,7 @@ from iris_ui_outputs import get_iris_outputs
 from util_logger import setup_logger
 
 logger, logname = setup_logger(__name__)
+
 
 app_ui = ui.page_navbar(
     shinyswatch.theme.solar(),
@@ -70,11 +75,11 @@ app_ui = ui.page_navbar(
     ui.nav(ui.a("GitHub", href="https://github.com/LuciMcD/cintel-03-data")),
     ui.nav(ui.a("Classmate's App", href="https://bethharvey.shinyapps.io/cintel-05-live-updates/")),
     ui.nav(ui.a("How To Video", href="https://www.youtube.com/watch?v=XI3iMgfIXlY")),
-    title=ui.h1("McDaniel Dashboard"),
+       title=ui.h1("McDaniel Dashboard"),
 )
 
 def server(input, output, session):
-    """Define functions to create UI outputs."""
+    
 
     @output
     @render.text
@@ -96,9 +101,11 @@ def server(input, output, session):
         choice = input.allergy_input()
         third_string = f"{choice}. Allergies are NOT fun."
         return third_string
+    
+
 
     
    
     get_iris_server_functions(input, output, session)
 
-app = App(app_ui, server)
+app = App(app_ui, server, debug=True)
