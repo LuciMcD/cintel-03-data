@@ -5,6 +5,7 @@ def get_iris_outputs():
     return ui.panel_main(
         ui.h2("IRISES!"),
         ui.tags.hr(),
+        ui.output_text_verbatim("iris_text"),
         ui.tags.section(
             ui.h3("Irises: Types and Sizes"),
             ui.tags.hr(),

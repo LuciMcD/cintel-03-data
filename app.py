@@ -12,6 +12,7 @@ Each Shiny app has two parts:
 
 import shinyswatch
 from shiny import App, ui, render
+import tkinter as tk
 
 
 
@@ -27,7 +28,7 @@ logger, logname = setup_logger(__name__)
 
 
 app_ui = ui.page_navbar(
-    shinyswatch.theme.solar(),
+    shinyswatch.theme.sketchy(),
     ui.nav(
         "Home",
         ui.layout_sidebar(

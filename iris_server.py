@@ -64,10 +64,17 @@ def get_iris_server_functions(input, output, session):
             size='petal_length',
         )
         return plt
+    
+    @output
+    @render.text
+    def iris_text():
+        message = ("Iris is a flowering plant genus of 310 accepted species with showy flowers. Iris is also widely used as a common name for all Iris species.")
+        return message
 
     return [
         iris_filtered_table,
         iris_plot,
+        iris_text
     ]        
 
     
